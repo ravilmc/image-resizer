@@ -88,7 +88,7 @@ function App() {
 
     console.log(formdata.getAll('files'));
     axios
-      .post('http://127.0.0.1:3001/resize', formdata, {
+      .post('https://image-resizer.onrender.com/resize', formdata, {
         responseType: 'blob',
         headers: {
           'Content-Type': 'multipart/form-data',
